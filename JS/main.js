@@ -33,6 +33,10 @@ form.addEventListener("submit", (e) => {
       `;
       li.innerHTML = markup;
       list.appendChild(li);
+      msg.innerHTML = "";
+    })
+    .catch(() => {
+      msg.innerHTML = `search for valid city`;
     });
   input.value = "";
 });
